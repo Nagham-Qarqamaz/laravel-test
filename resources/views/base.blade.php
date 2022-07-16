@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="@yield('meta')">
+
     <title>Homepage</title>
     <link rel="shortcut icon" href="images/book-logo.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -16,7 +18,7 @@
     <div class="mb-4">
         <nav class="navbar navbar-dark bg-dark">
             <a class="navbar-brand mx-3" href="{{ route('home') }}">
-                <img src="{{ asset('images/logo.png') }}" width="60" height="60" alt="" style="object-fit: cover; border-radius: 50%;">
+                <img src="{{ asset('images/logo.png') }}" width="60" height="60" alt="homepage logo" style="object-fit: cover; border-radius: 50%;">
             </a>
             <a href="/nova" type="button" class="text-end btn btn-dark mx-3">Dashboard</a>
         </nav>

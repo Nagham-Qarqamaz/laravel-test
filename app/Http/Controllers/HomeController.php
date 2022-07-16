@@ -31,7 +31,7 @@ class HomeController extends Controller
             });            
         }
 
-        $books = $books->orderBy('books.created_at','DESC')->paginate(10);
+        $books = $books->orderBy('books.created_at','DESC')->paginate(9);
         return view('home',[
             'books' => $books,
             'genres' => Genre::all()
